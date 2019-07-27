@@ -18,11 +18,6 @@ class ClickerViewController: UIViewController {
         return .lightContent
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
     // MARK: - Functions
     @objc func configureTimer() {
         time += 0.1
@@ -31,10 +26,11 @@ class ClickerViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func tappedScreen(_ sender: UITapGestureRecognizer) {
-        /// Add 1 to the count
+        /// Adds 1 to the total count and reflects the change on labelCount.
         count += 1
         labelCount.text = String(count)
         
+        /// Dismisses the View Controller when count reaches 30, effectively finishing and stopping the task.
         if count == 30 {
             self.dismiss(animated: true, completion: nil)
         }
@@ -42,10 +38,10 @@ class ClickerViewController: UIViewController {
     }
     
     @IBAction func buttonTimer(_ sender: UIButton) {
-        /// Configures time
+        /// Configures the timer to start counting per 0.1 seconds.
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(configureTimer), userInfo: nil, repeats: true)
         
-        /// Disables buttonTimer
+        /// Disables buttonTimer (invisible button) to repeat timer configuration.
         buttonTimer.isEnabled = false
     }
 
