@@ -32,7 +32,7 @@ class ClickerViewController: UIViewController {
         
         /// Dismisses the View Controller when count reaches 30, effectively finishing and stopping the task.
         if count == 30 {
-            self.dismiss(animated: true, completion: nil)
+            self.performSegue(withIdentifier: "unwind", sender: nil)
         }
         
     }

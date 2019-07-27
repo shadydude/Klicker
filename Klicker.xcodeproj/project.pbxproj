@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49B1DEB422EC32E3005A6A46 /* ScoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1DEB322EC32E3005A6A46 /* ScoresTableViewController.swift */; };
 		85135CAA22EBE0C5004091C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85135CA922EBE0C5004091C5 /* AppDelegate.swift */; };
 		85135CAC22EBE0C5004091C5 /* ClickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85135CAB22EBE0C5004091C5 /* ClickerViewController.swift */; };
 		85135CAF22EBE0C5004091C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85135CAD22EBE0C5004091C5 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49B1DEB322EC32E3005A6A46 /* ScoresTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresTableViewController.swift; sourceTree = "<group>"; };
 		85135CA622EBE0C4004091C5 /* Klicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85135CA922EBE0C5004091C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85135CAB22EBE0C5004091C5 /* ClickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49B1DEB222EC32AB005A6A46 /* Scores */ = {
+			isa = PBXGroup;
+			children = (
+				49B1DEB322EC32E3005A6A46 /* ScoresTableViewController.swift */,
+			);
+			path = Scores;
+			sourceTree = "<group>";
+		};
 		85135C9D22EBE0C4004091C5 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				85135CAD22EBE0C5004091C5 /* Main.storyboard */,
+				49B1DEB222EC32AB005A6A46 /* Scores */,
 				85135CBE22EBE13F004091C5 /* Clicker */,
 			);
 			path = Main;
@@ -170,6 +181,7 @@
 			files = (
 				85135CAC22EBE0C5004091C5 /* ClickerViewController.swift in Sources */,
 				85135CAA22EBE0C5004091C5 /* AppDelegate.swift in Sources */,
+				49B1DEB422EC32E3005A6A46 /* ScoresTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,16 +328,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5N5573DXVQ;
+				DEVELOPMENT_TEAM = HFYWW8ST8C;
 				INFOPLIST_FILE = Klicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.swiftaccelerator.Klicker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Klicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,16 +346,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5N5573DXVQ;
+				DEVELOPMENT_TEAM = HFYWW8ST8C;
 				INFOPLIST_FILE = Klicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.swiftaccelerator.Klicker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Klicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
