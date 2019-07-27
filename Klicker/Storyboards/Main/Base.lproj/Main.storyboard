@@ -89,34 +89,63 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe down to cancel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQn-Ot-Kh5">
-                                <rect key="frame" x="105" y="626" width="165" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe down to cancel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQn-Ot-Kh5">
+                                <rect key="frame" x="114" y="626" width="147.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="eCt-dy-12Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready to start!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faL-XM-DU3">
+                                <rect key="frame" x="105" y="597" width="165" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="pgk-sH-36W"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fr-Ut-eW2">
-                                <rect key="frame" x="0.0" y="20" width="375" height="606"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oI1-iA-aog">
+                                <rect key="frame" x="0.0" y="20" width="375" height="577"/>
+                                <connections>
+                                    <action selector="buttonTimer:" destination="36R-r0-OIF" eventType="touchUpInside" id="No9-6V-qCa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="MQn-Ot-Kh5" firstAttribute="top" secondItem="faL-XM-DU3" secondAttribute="bottom" constant="8" id="1g5-kA-YXm"/>
                             <constraint firstItem="Ms6-oh-mF4" firstAttribute="bottom" secondItem="MQn-Ot-Kh5" secondAttribute="bottom" constant="20" id="31Z-n7-vq0"/>
                             <constraint firstItem="x8b-p6-RkD" firstAttribute="centerY" secondItem="rls-j4-oeJ" secondAttribute="centerY" id="4Hn-GP-fjM"/>
-                            <constraint firstItem="Ms6-oh-mF4" firstAttribute="trailing" secondItem="2fr-Ut-eW2" secondAttribute="trailing" id="LdC-HT-jbY"/>
+                            <constraint firstItem="oI1-iA-aog" firstAttribute="leading" secondItem="Ms6-oh-mF4" secondAttribute="leading" id="IpS-hT-rqk"/>
+                            <constraint firstItem="Ms6-oh-mF4" firstAttribute="trailing" secondItem="oI1-iA-aog" secondAttribute="trailing" id="KUX-a5-H7w"/>
                             <constraint firstItem="x8b-p6-RkD" firstAttribute="centerX" secondItem="rls-j4-oeJ" secondAttribute="centerX" id="Ms5-OJ-pHo"/>
-                            <constraint firstItem="2fr-Ut-eW2" firstAttribute="leading" secondItem="Ms6-oh-mF4" secondAttribute="leading" id="SWf-qn-PiZ"/>
                             <constraint firstItem="MQn-Ot-Kh5" firstAttribute="centerX" secondItem="rls-j4-oeJ" secondAttribute="centerX" id="YCF-W4-EgS"/>
-                            <constraint firstItem="MQn-Ot-Kh5" firstAttribute="top" secondItem="2fr-Ut-eW2" secondAttribute="bottom" id="ZJ1-dX-fQh"/>
-                            <constraint firstItem="2fr-Ut-eW2" firstAttribute="top" secondItem="Ms6-oh-mF4" secondAttribute="top" id="axa-NM-gcc"/>
+                            <constraint firstItem="Ms6-oh-mF4" firstAttribute="trailing" secondItem="faL-XM-DU3" secondAttribute="trailing" constant="105" id="bSW-C5-Rf0"/>
+                            <constraint firstItem="faL-XM-DU3" firstAttribute="top" secondItem="oI1-iA-aog" secondAttribute="bottom" id="h24-eX-0b2"/>
+                            <constraint firstItem="oI1-iA-aog" firstAttribute="top" secondItem="Ms6-oh-mF4" secondAttribute="top" id="i7Q-wc-vKB"/>
+                            <constraint firstItem="faL-XM-DU3" firstAttribute="leading" secondItem="Ms6-oh-mF4" secondAttribute="leading" constant="105" id="z44-Eo-HrX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ms6-oh-mF4"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Uby-gC-E4i" appends="YES" id="aZd-ER-OVy"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="buttonTimer" destination="oI1-iA-aog" id="PTO-R9-5sh"/>
+                        <outlet property="labelCount" destination="x8b-p6-RkD" id="g9u-w6-vTL"/>
+                        <outlet property="labelTime" destination="faL-XM-DU3" id="XgR-gt-YA2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s29-JX-XdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Uby-gC-E4i">
+                    <connections>
+                        <action selector="tappedScreen:" destination="36R-r0-OIF" id="lfQ-oH-tAj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1972" y="133"/>
         </scene>
