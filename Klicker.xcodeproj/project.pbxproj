@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		85135CAA22EBE0C5004091C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85135CA922EBE0C5004091C5 /* AppDelegate.swift */; };
-		85135CAC22EBE0C5004091C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85135CAB22EBE0C5004091C5 /* ViewController.swift */; };
+		85135CAC22EBE0C5004091C5 /* ClickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85135CAB22EBE0C5004091C5 /* ClickerViewController.swift */; };
 		85135CAF22EBE0C5004091C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85135CAD22EBE0C5004091C5 /* Main.storyboard */; };
 		85135CB122EBE0C7004091C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85135CB022EBE0C7004091C5 /* Assets.xcassets */; };
 		85135CB422EBE0C7004091C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85135CB222EBE0C7004091C5 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		85135CA622EBE0C4004091C5 /* Klicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85135CA922EBE0C5004091C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85135CAB22EBE0C5004091C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85135CAB22EBE0C5004091C5 /* ClickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerViewController.swift; sourceTree = "<group>"; };
 		85135CAE22EBE0C5004091C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85135CB022EBE0C7004091C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85135CB322EBE0C7004091C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,46 @@
 		85135CA822EBE0C4004091C5 /* Klicker */ = {
 			isa = PBXGroup;
 			children = (
-				85135CA922EBE0C5004091C5 /* AppDelegate.swift */,
-				85135CAB22EBE0C5004091C5 /* ViewController.swift */,
+				85135CBB22EBE119004091C5 /* Storyboards */,
+				85135CBD22EBE127004091C5 /* Core Support */,
+			);
+			path = Klicker;
+			sourceTree = "<group>";
+		};
+		85135CBB22EBE119004091C5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				85135CBC22EBE120004091C5 /* Main */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		85135CBC22EBE120004091C5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
 				85135CAD22EBE0C5004091C5 /* Main.storyboard */,
+				85135CBE22EBE13F004091C5 /* Clicker */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		85135CBD22EBE127004091C5 /* Core Support */ = {
+			isa = PBXGroup;
+			children = (
+				85135CA922EBE0C5004091C5 /* AppDelegate.swift */,
 				85135CB022EBE0C7004091C5 /* Assets.xcassets */,
 				85135CB222EBE0C7004091C5 /* LaunchScreen.storyboard */,
 				85135CB522EBE0C7004091C5 /* Info.plist */,
 			);
-			path = Klicker;
+			name = "Core Support";
+			sourceTree = "<group>";
+		};
+		85135CBE22EBE13F004091C5 /* Clicker */ = {
+			isa = PBXGroup;
+			children = (
+				85135CAB22EBE0C5004091C5 /* ClickerViewController.swift */,
+			);
+			path = Clicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85135CAC22EBE0C5004091C5 /* ViewController.swift in Sources */,
+				85135CAC22EBE0C5004091C5 /* ClickerViewController.swift in Sources */,
 				85135CAA22EBE0C5004091C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
