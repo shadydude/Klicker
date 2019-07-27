@@ -77,7 +77,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Klicker" id="Trz-Uw-utH">
-                        <barButtonItem key="rightBarButtonItem" title="Play" id="pWa-Qv-F6C">
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="pWa-Qv-F6C">
                             <connections>
                                 <segue destination="36R-r0-OIF" kind="presentation" id="SZh-bC-4ZV"/>
                             </connections>
@@ -148,6 +148,7 @@
                         <viewLayoutGuide key="safeArea" id="Ms6-oh-mF4"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Uby-gC-E4i" appends="YES" id="aZd-ER-OVy"/>
+                            <outletCollection property="gestureRecognizers" destination="hvE-BJ-Mpq" appends="YES" id="dil-Ja-1Hq"/>
                         </connections>
                     </view>
                     <connections>
@@ -164,6 +165,11 @@
                         <action selector="tappedScreen:" destination="36R-r0-OIF" id="lfQ-oH-tAj"/>
                     </connections>
                 </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="hvE-BJ-Mpq">
+                    <connections>
+                        <action selector="swipeCancel:" destination="36R-r0-OIF" id="pGw-Yp-WCQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1972" y="133"/>
         </scene>
